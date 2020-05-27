@@ -194,11 +194,18 @@ final class HttpStatus
         self::NETWORK_AUTHENTICATION_REQUIRED => 'Network Authentication Required',
     ];
 
+    /**
+     * @return array|string[]
+     */
     public static function getReasonPhrases(): array
     {
         return static::$reasonPhrases;
     }
 
+    /**
+     * @param int $value
+     * @return string
+     */
     public static function getReasonPhrase(int $value): string
     {
         return static::$reasonPhrases[$value] ?? 'Unknown';
