@@ -1,0 +1,36 @@
+{
+    "name": "john-jun/http",
+    "description": "A simple http library",
+    "keywords": ["Air", "http"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "John",
+            "email": "53950451@qq.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "scripts": {
+        "test": "phpunit --colors=always tests"
+    },
+    "autoload": {
+        "psr-4": {
+            "Air\\Http\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Air\\Http\\Test\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
